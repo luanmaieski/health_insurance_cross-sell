@@ -3,7 +3,8 @@
 ![carro](img/carro_batido01.jpg)
 
 # Problema de Negócio
-Uma companhia que oferece plano de saúde aos clientes esta avaliando a possibilidade de oferecer um novo produto: o seguro veicular, e para isso eles precisam saber quais os melhores clientes para oferecer esse produto. Como cientistas de dados fomos contratados para  ajudar o time de produto com uma solução, sabendo que a empresa só a capacidade de fazer 20000 ligações para oferecer o novo seguro. Para prever se o cliente estaria interessado no seguro veicular, temos informações sobre dados demográficos, veículos, apólice e também a informção de uma pesquisa da empresa com seus clientes sobre o interesse em adquirir o novo seguro.
+Uma companhia que oferece plano de saúde aos clientes esta avaliando a possibilidade de oferecer um novo produto: o seguro veicular, e para isso eles precisam saber quais os melhores clientes para oferecer esse produto. Como cientistas de dados fomos contratados para  ajudar o time de produto com uma solução, sabendo que a empresa só a capacidade de fazer 20000 ligações para oferecer o novo seguro. 
+Para prever se o cliente estaria interessado no seguro veicular, temos informações sobre dados demográficos, veículos, apólice e também a informção de uma pesquisa da empresa com seus clientes sobre o interesse em adquirir o novo seguro.
 # Premissas do Negócio
 O dataset com os dados que usaremos nesse projeto apresenta as seguintes features:
 
@@ -141,8 +142,8 @@ Questão 2
 * Receita anual com o modelo sugerido fazendo 40000 ligações: U$14,841,600.00
 
 Questão 3 
-* Receita anual com o modelo aleatório fazendo 20000 ligações: U$4,558,400.00
-* Receita anual com o modelo sugerido fazendo 20000 ligações: U$11,956,800.00
+* Receita anual com o modelo aleatório fazendo 23247 ligações: U$4,558,400.00
+* Receita anual com o modelo sugerido fazendo 23247 ligações: U$11,956,800.00
 
 # Produto Final
 Para ter a lista ordenada por propensão, o usuario da ferramenta precisa inserir os dados do cliente, clicar em 'Propensity Score' e depois em 'Get Prediction'. Em alguns segundos o Google Sheets irá fazer uma requisição na api com o modelo treinado e retornar a lista ordenada.
