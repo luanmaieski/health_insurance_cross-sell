@@ -64,9 +64,32 @@ A estratégia para fazer esse projeto teve como base a metodologia CRISP-DS tend
 * Criar o script que usa o modelo para rankear os clientes no Google Sheets
 
 # Top 3 Insights
-asdfasdfasfd
+Foram criadas 10 hipóteses para validação. As 3 principais geraram os insights abaixo:
+
+| Insight 1 - Mulheres tem menor interesse pelo seguro |
+| -------- |
+| ![insight1 readme](img/hipotese01.png) |
+
+| Insight 2 - A faixa de idade com maior interesse pelo seguro é entre 30 e 50 anos |
+| -------- |
+| ![insight1 readme](img/hipotese02.png) |
+
+| Insight 3 - O interesse pelo seguro é maior por quem tem veiculos mais velhos |
+| -------- |
+| ![insight1 readme](img/hipotese06.png) |
+
+
 # Modelos de Machine Learning
-asdfasdf
+Os 5 algoritmos selecionados para esse projeto foram:
+1. K-Nearest Neighbors.
+2. Extra Trees.
+3. Random Forest.
+4. XGBoost.
+5. CatBoost.
+6. LGBM
+
+
+
 # Resultado de Negócio
 asdfasdf
 # Produto Final
