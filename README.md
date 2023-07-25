@@ -1,5 +1,7 @@
 # Propensão de Compra - Insurance Company
--------IMAGEM-----
+
+![carro](img/carro_batido01.png)
+
 # Problema de Negócio
 Uma companhia que oferece plano de saúde aos clientes esta avaliando a possibilidade de oferecer um novo produto: o seguro veicular, e para isso eles precisam saber quais os melhores clientes para oferecer esse produto. Como cientistas de dados fomos contratados para  ajudar o time de produto com uma solução, sabendo que a empresa só a capacidade de fazer 20000 ligações para oferecer o novo seguro. Para prever se o cliente estaria interessado no seguro veicular, temos informações sobre dados demográficos, veículos, apólice e também a informção de uma pesquisa da empresa com seus clientes sobre o interesse em adquirir o novo seguro.
 # Premissas do Negócio
@@ -143,7 +145,10 @@ Questão 3
 * Receita anual com o modelo sugerido fazendo 20000 ligações: U$11,956,800.00
 
 # Produto Final
-planilha no google sheets fazendo a previsão
+Para ter a lista ordenada por propensão, o usuario da ferramenta precisa inserir os dados do cliente, clicar em 'Propensity Score' e depois em 'Get Prediction'. Em alguns segundos o Google Sheets irá fazer uma requisição na api com o modelo treinado e retornar a lista ordenada.
+
+![planilha_GS](img/health_insurence_list.gif)
+
 # Conclusão
 O objetivo do projeto, que era entregar uma lista ordenada pelos melhores clientes para oferecer o produto, foi cumprido. As perguntas do time de produto foram respondidas e poderam direcionar a tomada de decisão nesse novo desafio de vendar seguro vaicular.
 
