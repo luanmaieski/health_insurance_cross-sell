@@ -88,13 +88,70 @@ Os 5 algoritmos selecionados para esse projeto foram:
 5. CatBoost.
 6. LGBM
 
+Os resultados dos modelos aplicando o metodo de cross validation foram os seguintes:
 
+|Modelo|Precision at k|Recall at k|
+|------|--------------|-----------|
+|LightGBM Classifier|0.3099+/- 0.0013|0.8295+/- 0.0035|
+|CatBoost Classifier|0.3092+/- 0.0016|0.8274+/- 0.0043|
+|XGBoost Classifier	|0.3082+/- 0.0013|0.8249+/- 0.0036|
+|Random Forest Classifier|0.2922+/- 0.0009|0.7819+/- 0.0025|
+|ExtraTreesClassifier|0.2875+/- 0.0014|0.7693+/- 0.0037|
+|LogisticRegression|0.2759+/- 0.001|0.7383+/- 0.0026|
+|KNeighborsClassifier|0.272+/- 0.0011|0.7279+/- 0.0029|
+
+A métrica para escolher o modelo foi a Precision at k que mede a precisão  nos primeiros k itens da lista. O modelo com a maoir precisão foi o **LGBM**. 
+
+Após fazer a busca pelos melhores hiperparâmetros o modelo LGBM apresentou o resultado abaixo:
+
+|Modelo|Precision at k|Recall at k|
+|------|--------------|-----------|
+|LightGBM Classifier|0.3105+/- 0.0014|0.8311+/- 0.0038|
 
 # Resultado de Negócio
-asdfasdf
+A seguir são respondidas perguntas de negócio que o time de produto solicitou.
+**1. Qual porcentagem de clientes interessados em comprar o seguro veicular o time de vendas pode alcançar fazendo 20000 ligações?**
+![business](img/gaincurve01.png)
+
+![business](img/liftcurve01.png)
+
+Fazendo 20000 ligações, que representam 26,23% dos dados, o time de vendas consegue alcançar 71,7% de pessoas interessadoasno novo seguro. O modelo é 2,73 vezes melhor que o modelo aleatório.
+
+**2. E se o time de vendas aumentasse a capacidade de ligações para 40000, qual a porcentagem de clientes interessados no seguro veicular eles iriam alcançar?**
+![business](img/gaincurve02.png)
+
+![business](img/liftcurve02.png)
+
+Fazendo 40000 ligações, que representam 52,47% dos dados, o time de vendas consegue alcançar 99,3% de pessoas interessadoasno novo seguro. O modelo é 1,89 vezes melhor que o modelo aleatório.
+
+**3. Quantas ligações o time de vendas precisa fazer para alcançar 80% dos clientes interessados no seguro veicular?**
+![business](img/gaincurve03.png)
+
+Fazendo 23247 ligações, o time de vendas alcança 80% dos interessados no seguro veicular.
+## Resultados Financeiros
+Para fazer uma estimativa do resultado financeiro usando o modelo assumi a premissa de que o lucro com cada cliente é de 1600 dólares. 
+Questão 1
+* Receita anual com o modelo aleatório fazendo 20000 ligações: U$3,920,000.00
+* Receita anual com o modelo sugerido fazendo 20000 ligações: U$10,716,800.00
+
+Questão 2
+* Receita anual com o modelo aleatório fazendo 40000 ligações: U$7,841,600.00
+* Receita anual com o modelo sugerido fazendo 40000 ligações: U$14,841,600.00
+
+Questão 3 
+* Receita anual com o modelo aleatório fazendo 20000 ligações: U$4,558,400.00
+* Receita anual com o modelo sugerido fazendo 20000 ligações: U$11,956,800.00
+
 # Produto Final
 planilha no google sheets fazendo a previsão
 # Conclusão
-asdfasdfasfd
+O objetivo do projeto, que era entregar uma lista ordenada pelos melhores clientes para oferecer o produto, foi cumprido. As perguntas do time de produto foram respondidas e poderam direcionar a tomada de decisão nesse novo desafio de vendar seguro vaicular.
+
+Além da lista ordenada, com os insights apresentados nesse projeto o time de produto pode ter novas ideias para melhorar o negócio.
+
 # Próximos passos
-asdfasdf
+* Pensar em mais hipóteses para gerar outros insights.
+* Testar novos modelos e novos metodos de fine tuning.
+* Criar novas features que possam ajudar o modelo.
+* Aplicar transformações diferentes nos dados e avaliar se melhoraria a performance.
+
