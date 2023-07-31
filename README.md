@@ -1,6 +1,6 @@
 # Propensão de Compra - Insurance Company
 
-![carro](img/carro_batido01.jpg)
+![carro](img/car_crashed.jpg)
 
 # Problema de Negócio
 Uma companhia que oferece plano de saúde aos clientes esta avaliando a possibilidade de oferecer um novo produto: o seguro veicular, e para isso eles precisam saber quais os melhores clientes para oferecer esse produto. Como cientistas de dados fomos contratados para  ajudar o time de produto com uma solução, sabendo que a empresa só a capacidade de fazer 20000 ligações para oferecer o novo seguro. 
